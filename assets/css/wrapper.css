@@ -1,0 +1,119 @@
+.container {
+  width: 100vw;
+  position: relative;
+}
+/* .container::after,
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 42px;
+  height: 100%;
+}
+.container::after {
+  left: 0;
+  background-image: url("../images/bg-opactity-left.png");
+}
+.container::before {
+  right: 0;
+  background-image: url("../images/bg-opacity-right.png");
+} */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: auto;
+  overflow-x: hidden;
+  width: 30000px;
+  gap: 24px;
+}
+
+.item {
+  width: 357px;
+  display: flex;
+  align-items: center;
+  background: var(--bg-color);
+}
+.item-title {
+  border-right: 1px dashed var(--main-color);
+  padding: 18px;
+  position: relative;
+}
+
+.item-title > h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--main-color);
+}
+.item-title > span {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--gray-color);
+}
+.item-button {
+  padding: 39px 20px;
+  position: relative;
+}
+.item-button::after,
+.item-button::before {
+  content: "";
+  position: absolute;
+  left: -13.5px;
+  width: 22px;
+  height: 12px;
+}
+.item-button::after {
+  background-image: url("../images/bottom-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+}
+.item-button::before {
+  background-image: url("../images/top-icon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+}
+
+.item-button > button {
+  width: 80px;
+  height: 42px;
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 42px;
+  cursor: pointer;
+  z-index: 33;
+}
+.nav-button > button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+  border-radius: 50%;
+  background: var(--main-color);
+  cursor: pointer;
+}
+.nav-button > button > img {
+  width: 100%;
+}
+
+#prev {
+  left: 0;
+}
+#next {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  .item {
+    width: 100vw;
+  }
+}

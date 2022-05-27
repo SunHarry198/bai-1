@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title</title>
+    <link rel="stylesheet" href="./assets/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper" id="wrapper-slide">
+        <div class="item">
+          <div class="item-title">
+            <h3>Miễn phí giao hàng cho đơn hàng từ 50.000đ</h3>
+            <span>HSD: 26-05-2022</span>
+          </div>
+          <div class="item-button">
+            <button>Lưu</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <h3>Miễn phí giao hàng cho đơn hàng từ 50.000đ</h3>
+            <span>HSD: 26-05-2022</span>
+          </div>
+          <div class="item-button">
+            <button>Lưu</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <h3>Miễn phí giao hàng cho đơn hàng từ 50.000đ</h3>
+            <span>HSD: 26-05-2022</span>
+          </div>
+          <div class="item-button">
+            <button>Lưu</button>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">
+            <h3>Miễn phí giao hàng cho đơn hàng từ 50.000đ</h3>
+            <span>HSD: 26-05-2022</span>
+          </div>
+          <div class="item-button">
+            <button>Lưu</button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-button">
+        <button id="prev">
+          <img src="./assets/images/prev-btn.png" alt="" />
+        </button>
+        <button id="next">
+          <img src="./assets/images/next-btn.png" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700;800;900&family=Open+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </body>
+  <script>
+    const items = document.querySelectorAll("item");
+    const wrapper = document.getElementById("wrapper-slide");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+    prevBtn.addEventListener("click", () => {
+      wrapper.attributes.transform = "translateX(100vw)";
+    });
+  </script>
+</html>
